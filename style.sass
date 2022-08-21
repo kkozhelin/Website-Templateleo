@@ -1,0 +1,534 @@
+@import fonts.sass
+@import var.sass
+
+*
+    padding: 0
+    margin: 0
+
+HTML, body
+    height: 100%
+
+.box
+    display: flex
+    flex-direction: column
+    min-height: 100%
+
+.content
+    flex: 1
+
+.container-me
+    max-width: 1024px
+    margin: 0 auto
+
+.header-relative
+    position: relative
+
+// header
+.header
+    background-image: url(img/bg.png)
+    background-repeat: no-repeat
+    background-size: 100%
+    height: 488px
+    margin-bottom: 70px
+    // background-size: auto
+    &__logo
+        position: absolute
+        top: 56px
+        left: 2%
+
+.menu
+    text-align: right
+    padding-top: 47px
+    &__link
+        display: inline-block
+        font-size: 23px
+        font-family: Segoe
+        text-decoration: none
+        color: #fff
+        padding-right: 50px
+        padding-left: 8px
+        transition: all 0.5s
+
+    &__link:hover
+        text-decoration: none
+        color: #fff
+        transform: scale(1.2)
+
+.menu-mini
+    display: none
+    text-align: right
+    padding-top: 47px
+
+// carousel
+.carousel-box
+    margin-top: 120px
+    display: flex
+    justify-content: center
+
+.container-carousel
+    width: 1280px
+
+.flex-box
+    display: flex
+    justify-content: flex-start
+
+.carousel-content
+    margin-left: 76px
+    margin-top: 10px
+    &__header
+        padding-top: 15px
+        font-size: 65px
+        color: #fff
+        font-weight: 600
+    &__text
+        font-size: 45px
+        color: #fff
+        font-weight: 200
+    &__btn
+        width: 138px
+        height: 41px
+        border: solid 3px rgba(24, 29, 26, 0.8)
+        background-color: #2a7351
+        font-size: 23px
+        font-weight: 300
+        color: #e0eae5
+
+.carousel-control-prev-img
+    margin-top: -160px
+
+.carousel-control-next-img
+    margin-top: -160px
+
+//services
+.services
+    padding: 3% 2% 0
+.services-box
+    margin-bottom: 40px
+    display: flex
+    justify-content: space-between
+
+.service-btn
+    background: #fff
+    border: none
+    max-width: 249px
+    width: 100%
+    padding: 27px 0px 120px
+    transition: all 0.5s
+    &__img-text
+        padding-top: 22px
+        color: $textColor
+        max-width: 180px
+        width: 100%
+        height: 47px
+        text-align: center
+        font-size: 27px
+        font-weight: 300
+        pointer-events: none
+        margin: 0 auto
+    &__img
+        pointer-events: none
+        width: 70%
+
+.service-btn.active
+    border: 1px solid #dedede
+    border-bottom: none
+    padding: 27px 0px 120px
+    box-shadow: 0px -3px 5px 0px #dedede
+    z-index: 100
+    transition: all 0.5s
+    h3
+        font-weight: 600
+        transition: all 0.5s
+
+.flex-box
+    display: flex
+    justify-content: center
+
+.services-info
+    border: 1px solid #dedede
+    box-shadow: 0px -2px 5px 0px #dedede
+    margin-top: -41px
+    z-index: 1
+    max-width: 1024px
+    width: 100%
+    &__img
+        margin-top: 60px
+        max-width: 713px
+        width: 100%
+    &__header
+        font-size: 39px
+        color: $textColor
+        padding-left: 57px
+        margin-top: 61px
+    &__text
+        font-size: 14px
+        color: $textColor
+        padding: 28px 71px 68px 57px
+
+//choose-us
+.choose-us
+    padding: 3% 2% 0
+    margin-top: 22px
+    &__h3-mini
+        display: none
+
+.choose-us-box
+    display: flex
+    justify-content: space-between
+    &__img-box
+        max-width: 450px
+        width: 100%
+    &__img
+        width: 100%
+.why-choose-us
+    margin-left: 56px
+    &__h3
+        font-size: 32px
+        color: $textColor
+        margin-bottom: 30px
+        margin-top: 23px
+
+.advantages-box
+    display: flex
+    flex-direction: column
+
+.advantage
+    display: flex
+    margin: 0
+    &__check
+        padding-right: 12px
+        color: #e67624
+        margin: 0
+        line-height: 25px
+        font-size: 16px
+    &__text
+        font-size: 14px
+        color: $textColor
+        margin-left: 0
+// hr
+hr
+    margin-top: 56px
+    // margin-bottom: 23px
+    margin-bottom: 0px
+    height: 1px
+    opacity: 0.11
+
+//forms
+.forms
+    padding: 3% 2% 0
+    margin-bottom: 36px
+    padding-top: 0px
+
+.forms-box
+    display: flex
+    justify-content: space-between
+
+.login-form
+    background-color: #e67624
+    max-width: 470px
+    width: 100%
+    margin: 0
+    padding: 10px 15px 18px 26px
+    border-radius: 3%
+    height: 109px
+    margin-top: 23px
+    margin-right: 15px
+    &__h4
+        color: #ffffff
+        font-size: 28px
+        font-weight: 300
+        padding-bottom: 10px
+    &__name
+        max-width: 155px
+        width: 100%
+        height: 26px
+        padding: 0px 7px
+        font-size: 16px
+        color: $textColorForm
+        border: none
+        outline: none
+        background-color: #e8e8e8
+    &__pass
+        max-width: 155px
+        width: 100%
+        height: 26px
+        padding: 0px 7px
+        font-size: 16px
+        color: $textColorForm
+        border: none
+        outline: none
+        background-color: #e8e8e8
+    &__btn
+        font-size: 16px
+        font-weight: 300
+        width: 94px
+        height: 30px
+        background-color: #444444
+        border: none
+        color: #fff
+        margin-left: 12px
+        transition: all 0.5s
+    &__btn:hover
+        background-color: #fff
+        color: $textColorForm
+
+.subscribe-form
+    background-color: #01d4f3
+    max-width: 470px
+    width: 100%
+    height: 109px
+    margin: 0
+    padding: 10px 15px 18px 26px
+    border-radius: 3%
+    margin-top: 23px
+    &__h4
+        color: #ffffff
+        font-size: 28px
+        font-weight: 300
+        padding-bottom: 10px
+    &__email
+        max-width: 265px
+        width: 100%
+        padding: 0px 10px
+        height: 26px
+        font-size: 16px
+        color: $textColorForm
+        border: none
+        outline: none
+        background-color: #e8e8e8
+    &__btn
+        font-size: 16px
+        font-weight: 300
+        width: 94px
+        height: 30px
+        background-color: #029bb1
+        border: none
+        color: #fff
+        margin-left: 62px
+        transition: all 0.5s
+    &__btn:hover
+        background-color: #fff
+        color: $textColorForm
+
+//footer
+.footer
+    background-image: url(img/footer.png)
+    padding: 3% 2% 2%
+.footer-box
+    display: flex
+    padding-top: 34px
+    justify-content: space-between
+    flex-wrap: wrap
+
+.about
+    display: flex
+    flex-direction: column
+    padding-right: 8%
+    margin: 0
+    margin-top: 35px
+    &__h4
+        color: #ffffff
+        font-size: 22px
+        font-weight: 300
+        margin-left: 0
+        font-weight: 600
+    &__link
+        color: #ffffff
+        font-size: 13px
+        text-decoration: none
+        opacity: 0.5
+        margin-left: 0
+        width: 101px
+        line-height: 1.69
+        transition: all 0.5s
+        font-weight: 600
+    &__link:hover
+        opacity: 1
+        color: #ffffff
+
+.testimoanials
+    margin: 0
+    max-width: 316px
+    width: 100%
+    margin-top: 35px
+    &__h4
+        color: #ffffff
+        font-size: 22px
+        font-weight: 300
+        margin-left: 0
+        font-weight: 600
+    &__text
+        color: #ffffff
+        font-size: 13px
+        opacity: 0.5
+        margin-left: 0
+        width: 316px
+        line-height: 1.69
+        font-weight: 600
+        margin-bottom: 7px
+    &__text-bold
+        color: #ffffff
+        font-size: 13px
+        margin-left: 0
+        width: 141px
+        line-height: 1.69
+        font-weight: 600
+
+.logo
+    margin: 0
+    margin-top: 40px
+    &__img
+        opacity: 0.22
+    &__text
+        margin-top: 38px
+        opacity: 0.8
+        font-size: 13px
+        color: #ffffff
+
+@media  (max-width: 995px)
+    //header
+    .header
+        background-size: auto
+    // menu
+    .menu
+        display: none
+        &__link
+            text-decoration: none
+            display: block
+            font-size: 14px
+            line-height: 25px
+            color: #6F6E6E
+            margin-bottom: 11px
+            margin-left: 21px
+        &__link:hover
+            color: #6F6E6E
+
+    .menu-mini
+        padding-right: 4%
+        display: block
+        position: relative
+
+    summary
+        list-style: none
+
+    summary > svg
+        fill: #E8E8E8
+        -webkit-transition: 00.3s
+        transition: 00.3s
+
+    summary:hover > svg
+        fill: #2a7351
+
+    .mega-box
+        top: 85px
+        padding-top: 16px
+        margin-right: 27px
+        background: #FFFFFF
+        position: absolute
+        width: 120px
+        -webkit-box-shadow: 0 5px 18px rgba(0, 0, 0, 0.16)
+        box-shadow: 0 5px 18px rgba(0, 0, 0, 0.16)
+        z-index: 10
+        right: 0
+        border-radius: 5%
+    .mega-close
+        margin-bottom: 19px
+        padding-right: 4px
+        margin-top: -20px
+        &__img
+            margin-top: -18px
+            margin-right: 7px
+
+    .mega-link
+        text-decoration: none
+        display: block
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        margin-bottom: 11px
+        margin-left: 21px
+
+    //carousel
+    .carousel-img
+        display: none
+
+    .carousel-content
+        margin: 0 auto
+        &__header
+            min-font-size: 14px
+
+    //service
+    .service-btn
+        width: 25%
+        &__img-text
+            font-size: x-large
+    //choose-us
+    .choose-us-box
+        flex-direction: column
+        flex-wrap: wrap
+        align-items: center
+        &__img
+            margin-bottom: 30px
+
+    .why-choose-us
+        margin: 0 auto
+        &__h3
+            display: none
+
+    .choose-us
+        &__h3-mini
+            display: block
+            text-align: center
+
+    .advantages-box
+        width: 100%
+
+    //forms
+    .forms-box
+        align-items: center
+        flex-direction: column
+
+    .login-form
+        margin-right: 0px
+        max-height: 300px
+        height: 100%
+        &__btn
+            margin-top: 10px
+
+    .subscribe-form
+        max-height: 300px
+        height: 100%
+
+@media (min-width: 320px) and (max-width: 550px)
+    //carousel
+    .carousel-content
+        &__header
+            font-size: 50px
+            text-align: center
+        &__text
+            font-size: x-large
+            text-align: center
+        &__btn
+            margin-left: 20%
+
+    .carousel-control-prev-img
+        display: none
+    .carousel-control-next-img
+        display: none
+    //services
+    .service-btn
+        width: 25%
+        &__img-text
+            font-size: small
+
+    // form
+    .login-form
+        &__btn
+            margin-left: 0px
+
+    .subscribe-form
+        display: flex
+        flex-direction: column
+        &__btn
+            margin-top: 10px
+            margin-left: 0
